@@ -64,7 +64,7 @@ export default function PutPage() {
         setIsLoading(true);
 
         axios
-            .put(`https://shopping-website-server.onrender.com/clohtes/${id}`, {
+            .put(`https://shopping-website-server.onrender.com/clothes/${id}`, {
                 ...form,
                 price: Number(form.price),
                 rating: Number(form.rating),

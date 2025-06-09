@@ -58,7 +58,7 @@ export default function PostPage() {
         setIsLoading(true);
 
         axios
-            .post("https://shopping-website-server.onrender.com/clohtes", {
+            .post("https://shopping-website-server.onrender.com/clothes", {
                 ...form,
                 price: Number(form.price),
                 rating: Number(form.rating),

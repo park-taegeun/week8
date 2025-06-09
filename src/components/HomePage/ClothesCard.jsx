@@ -19,7 +19,7 @@ export default function ClothesCard({ name, id,  color, price, image }) {
             return;
 
         axios
-            .patch(`https://shopping-website-server.onrender.com/clohtes/${id}`, { name: newName })
+            .patch(`https://shopping-website-server.onrender.com/clothes/${id}`, { name: newName })
             .then((res) => {
                 alert("이름이 변경되었습니다");
                 window.location.reload();
@@ -40,7 +40,7 @@ export default function ClothesCard({ name, id,  color, price, image }) {
         }
 
         axios
-            .delete(`https://shopping-website-server.onrender.com/clohtes/${id}`)
+            .delete(`https://shopping-website-server.onrender.com/clothes/${id}`)
             .then((res) => {
                 alert("상품이 삭제되었습니다");
                 window.location.reload();
